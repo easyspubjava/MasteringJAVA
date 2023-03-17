@@ -1,0 +1,18 @@
+3월 01, 2023 11:26:54 오후 ch04.MyLogger warning
+WARNING: name must not be null
+3월 01, 2023 11:26:54 오후 ch04.MyLogger warning
+WARNING: name is too long
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+FINEST: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+FINER: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+FINE: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+CONFIG: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+INFO: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+WARNING: test
+3월 01, 2023 11:29:52 오후 ch04.MyLogger log
+SEVERE: test
