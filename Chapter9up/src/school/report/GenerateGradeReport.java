@@ -68,13 +68,13 @@ public class GenerateGradeReport {
 			Score score = scoreList.get(i);
 			if(score.getSubject().getSubjectId() == subject.getSubjectId()) {  // 현재 학점을 산출할 과목 
 						
-				evaluateGrade(subject, score, majorId);
+				evaluateGradeByScore(subject, score, majorId);
 				
 			}
 		}
 	}
 	
-	public void evaluateGrade( Subject subject, Score score, int majorId) {
+	public void evaluateGradeByScore( Subject subject, Score score, int majorId) {
 		
 		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()}; 
 		String grade;
