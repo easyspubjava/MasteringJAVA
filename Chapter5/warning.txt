@@ -1,2 +1,0 @@
-3월 01, 2023 11:29:52 오후 ch04.MyLogger log
-SEVERE: test
