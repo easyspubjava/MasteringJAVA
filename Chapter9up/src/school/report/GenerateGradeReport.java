@@ -61,30 +61,15 @@ public class GenerateGradeReport {
 		
 		ArrayList<Score> scoreList = student.getScoreList();
 		int majorId = student.getMajorSubject().getSubjectId();
-		
-		//GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation(), new PassFailEvaluation()};  //학점 평가 클래스들
+
 		
 		for(int i=0; i<scoreList.size(); i++){  // 학생이 가진 점수들 
 			
 			Score score = scoreList.get(i);
 			if(score.getSubject().getSubjectId() == subject.getSubjectId()) {  // 현재 학점을 산출할 과목 
-							
+						
 				evaluateGrade(subject, score, majorId);
-				/*String grade;
 				
-				if( subject.getGradeType() == Define.PF_TYPE) {
-					grade = gradeEvaluation[Define.PF_TYPE].getGrade(score.getPoint());
-				}
-				else {
-					if(score.getSubject().getSubjectId() == majorId)  // 중점 과목인 경우
-						grade = gradeEvaluation[Define.SAB_TYPE].getGrade(score.getPoint());  //중점 과목 학점 평가 방법
-					else
-						grade = gradeEvaluation[Define.AB_TYPE].getGrade(score.getPoint()); // 중점 과목이 아닌 경우
-				}
-				buffer.append(score.getPoint());
-				buffer.append(":");
-				buffer.append(grade);
-				buffer.append(" | "); */
 			}
 		}
 	}
@@ -110,7 +95,6 @@ public class GenerateGradeReport {
 		buffer.append(" | ");
 		
 	}
-	
 	
 	public void makeFooter(){
 		buffer.append("\n");
